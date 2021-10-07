@@ -8,6 +8,7 @@ class MainDataType {
 
     name:string;
     description:string;
+    avatarimage:string;
     image:string;
     bio:string;
     contactmessage:string;

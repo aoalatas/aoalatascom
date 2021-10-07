@@ -114,6 +114,24 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #0762f9; }
 
+header .profile-pic {
+   margin-top: 50px;
+   position: relative;
+   width: 250px;
+   height: 250px;
+   border-radius: 100%;
+}
+
+header a.button {
+	text-transform: uppercase;
+	border: none;
+   cursor: pointer;
+   height: auto;
+   display: inline-block;
+	border-radius: 10px;
+   width: 180px;
+}
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {

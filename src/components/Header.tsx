@@ -25,7 +25,7 @@ class Header extends Component<ComponentProps, ComponentState>  {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
-
+    const avatarimage = "images/" +this.props.data.avatarimage;
     return (
       <header id="home">
         <ParticlesBg type="circle" bg={true} />
@@ -74,20 +74,27 @@ class Header extends Component<ComponentProps, ComponentState>  {
         <div className="row banner">
           <div className="banner-text">
             <Fade>
+              <img className="profile-pic" src={avatarimage} alt="Avatar" />
+            </Fade>
+            <Fade>
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade>
-              <h3>{description}.</h3>
+              <h3>{description}</h3>
             </Fade>
             <hr />
             <Fade>
               <ul className="social">
-                <a href={blog} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
-                <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
-                </a>
+                <li>
+                  <a href={blog} target="newtab" className="button btn project-btn">
+                    <i className="fa fa-book"></i> Blog 
+                  </a>
+                  </li>
+                  <li>
+                  <a href={github} className="button btn github-btn">
+                    <i className="fa fa-github"></i>Github
+                  </a>
+                  </li>
               </ul>
             </Fade>
           </div>
